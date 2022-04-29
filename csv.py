@@ -159,9 +159,20 @@ class csv():
         if condicion=="SUPERIOR":
             for i in range(n):
                 topEquipos.append(equipos[i])
+                encontrado=True
         elif condicion=="INFERIOR":
             for i in range( (equipos.len-n), equipos.len):
                 topEquipos.append(equipos[i])
+                encontrado=True
+
+        
+        if encontrado:
+            print("El top " + condicion + " de la temporada " + temporada + " fue:")
+            for obj in topEquipos:
+                print(topEquipos.nombre)
+        else:
+            print("No encontrado")
+            
 
 
 
