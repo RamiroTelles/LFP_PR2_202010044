@@ -6,6 +6,7 @@ class tokentype(Enum):
     flag = 1003
     num = 1004
     year=1005
+    tokenAceptacion = 1006
     
     
    
